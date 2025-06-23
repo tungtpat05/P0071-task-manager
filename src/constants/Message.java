@@ -23,4 +23,5 @@ public class Message {
     public static String ERR_TASK_INVALID = "Invalid tasks!";
     public static String ERR_ID_NOT_EXISTED = "ID not existed!";
     public static String ERR_PLAN_TIME = "Plan From must be less than Plan To!";
+    public static String ERR_TIME_FORMAT = "Time format (8.0, 8.5, 9.0, 9.5, ..., 17.5)";
 }

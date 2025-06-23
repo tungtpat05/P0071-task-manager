@@ -103,10 +103,11 @@ public class Main {
                             //Input Plan From 
                             while (true) {
                                 try {
-                                    System.out.print("From: ");
+                                    System.out.print("From (8.0, 8.5, 9.0, 9.5, ..., 17.5): ");
                                     planFrom = Double.parseDouble(sc.nextLine());
 
                                     Validator.validateDoubleInRange(planFrom, 8, 17.5);
+                                    Validator.validateTimeFormat(planFrom);
 
                                     break;
                                 } catch (TaskException | NumberFormatException e) {
@@ -117,10 +118,11 @@ public class Main {
                             //Input Plan To
                             while (true) {
                                 try {
-                                    System.out.print("To: ");
+                                    System.out.print("To (8.0, 8.5, 9.0, 9.5, ..., 17.5): ");
                                     planTo = Double.parseDouble(sc.nextLine());
 
                                     Validator.validateDoubleInRange(planTo, 8, 17.5);
+                                    Validator.validateTimeFormat(planTo);
 
                                     break;
                                 } catch (TaskException | NumberFormatException e) {

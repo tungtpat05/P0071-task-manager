@@ -40,6 +40,13 @@ public class Validator {
             throw new TaskException(String.format(constants.Message.ERR_DOUBLE_IN_RANGE, min, max));
         }
     }
+    
+    //Check Time plan format (8.0, 8.5, 9.0, 9.5, ..., 17.5)
+    public static void validateTimeFormat(double input) {
+        if((input*10)%5 !=0 ) {
+            throw new TaskException(constants.Message.ERR_TIME_FORMAT);
+        }
+    }
 
     //Check valid date format: dd-MM-yyyy
     public static void validateDateFormat(String input) {
