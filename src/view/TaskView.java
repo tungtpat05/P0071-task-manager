@@ -44,12 +44,4 @@ public class TaskView {
         }
     }
 
-    //Print main menu
-    public void printMainMenu() {
-        System.out.println("======== Task Management =========\n"
-                + "1. Add Task\n"
-                + "2. Delete Task\n"
-                + "3. Display Task\n"
-                + "4. Exit\n");
-    }
 }

@@ -25,7 +25,11 @@ public class Main {
 
         while (true) {
             //Print main menu
-            taskController.displayMainMenu();
+            System.out.println("======== Task Management =========\n"
+                + "1. Add Task\n"
+                + "2. Delete Task\n"
+                + "3. Display Task\n"
+                + "4. Exit\n");
 
             //Ask user choice
             int choice;

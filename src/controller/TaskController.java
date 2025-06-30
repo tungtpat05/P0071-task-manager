@@ -85,8 +85,4 @@ public class TaskController {
         taskView.printList();
     }
 
-    //Display main menu
-    public void displayMainMenu() {
-        taskView.printMainMenu();
-    }
 }
